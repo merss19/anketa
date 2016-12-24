@@ -2,9 +2,10 @@
 mixin form(data)
 	+b('fieldset').form
 		each item in data
+			-var classItem = 'form__value_type_'+ item[0]
 			+e.item
 				+e('label').label(for = '#{ item[0]}') #{ item[1]}
-				+e.value
+				+e.value(class=classItem)
 					+e('input').input(
 						type='text'
 						value='#{ item[2] }'

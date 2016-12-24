@@ -1,7 +1,8 @@
 include ../title/title
 include ../form/form
 include ../aboute/aboute
-
+include ../slider/slider
+include ../tell/tell
 mixin index()
 	+b.content
 		+b.index
@@ -9,3 +10,5 @@ mixin index()
 				+title()
 			+form(getData('form'))
 			+aboute(getData('skill'))
+			+slider()
+			+tell()

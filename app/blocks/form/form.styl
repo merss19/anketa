@@ -1,54 +1,52 @@
 .form
 	border 0
-	margin-top: 37px;
-	padding-left: 1px;
+	padding: 44px 0 20px
 
 	&__item
 		clearfix()
 		width: 100%;
 		overflow: hidden;
-		padding-bottom:1.7px
+		padding: 1px 0;
 
 	&__label
-		float left
 		cursor pointer
-		margin: 24px 0 0 -2px
 		font-family: PTSansBold
 		font-size: 22px
 		display: inline-block
+		vertical-align: middle
+		padding-top: 16px;
 
 	&__input[type='text']
 		border 0
 		font-family CourierNew
 		font-size 30px
-		padding: 0 0 14px 34px;
+		padding: 0 0 33px 28px;
 		background: transparent
 		background-repeat: no-repeat
-		height: 60px
+		height: 57px
+		width:100%
 
 	&__value
 		display: inline-block
 		position: relative
+		width: 641px
+
+		&_type
+			&_name
+				width: 641px
+			&_year
+				width: 629px
+			&_city
+				width: 591px
+			&_skype
+				width: 708px
+			&_mail
+				width: 708px
 
 		&:before
 			content: ''
 			display: block
 			retinaSprite $line_group
 			position: absolute
-			bottom: 12px;
-			left: 17px;
-
-#name
-	width: 646px
-#year
-	width: 640px
-	margin-left -6px
-#city
-	width: 597px
-	margin-left -6px
-#skype
-	width: 715px
-	margin-left -4px
-#mail
-	width: 716px
-	margin-left -4px
+			bottom: 21px;
+			left: 14px;

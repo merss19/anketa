@@ -1,25 +1,34 @@
 mixin aboute(skill)
 	+b.aboute
-		+e('h2').title&attributes(attributes) Расскажите о себе чекбоксами
-			+e('p').text
-				| Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
-		+e('ul').list
-			each item in skill
-				+e('li').item
-					if item.check
-						+e('label')
-							| #{ item.name}
-							input(
-							type = 'checkbox'
-							name = 'skill'
-							value = '#{ item[0] }'
-							checked
-							)
-					else
-						+e('label')
-							| #{ item.name}
-							input(
-							type = 'checkbox'
-							name = 'skill'
-							value = '#{ item[0] }'
-							)
+		+e('h2').title.header-section&attributes(attributes) Расскажите о себе чекбоксами
+		+e('p').text
+			| Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+		+e.skill
+			each arr in skill
+				+e('ul').list
+					each item in arr
+						console.log(item)
+						+e('li').item
+							if item.check
+								+e('label').label
+									| #{ item.name}
+									if item.link
+										+e('a').link=item.link
+									+e('input').input(
+										type = 'checkbox'
+										name = 'skill'
+										value = '#{ item[0] }'
+										checked
+										)
+									+e('span').checkbox
+							else
+								+e('label').label
+									| #{ item.name}
+									if item.link
+										+e('a').link=item.link
+									+e('input').input(
+										type = 'checkbox'
+										name = 'skill'
+										value = '#{ item[0] }'
+										)
+									+e('span').checkbox

@@ -1,23 +1,28 @@
 [
-    { "name": "БЭМ/OOCSS","check": "true" },
-    { "name": "Gulp/GRUNT","check": "true" },
-    { "name": "Использую Git","check": "true" },
-    { "name": "Pug (Jade)","check": "true" },
-    { "name": "Webpack","check": "true" },
-    { "name": "С глазомером всё ок","check": "true" },
-    { "name": "Stylus/LESS/SASS","check": "true" },
-    { "name": "Дружу с WebGL","check": "true" },
-    { "name": "Читаю blog.csssr.ru","check": "true" },
-    { "name": "Работаю с SVG","check": "true" },
-    { "name": "jQuery","check": "true" },
-    { "name": "Я ленивый(-ая)","check": "true" },
-    { "name": "Верстаю семантично","check": "" },
-    { "name": "Знаю(изучаю) Angular","check": "true" },
-    { "name": "У меня хороший английский","check": "true" },
-    { "name": "Accessibility (A11Y)","check": "true" },
-    { "name": "Знаю(изучаю) React","check": "true" },
-    { "name": "ES2015/ES2016","check": "true" },
-    { "name": "Знаю(изучаю) Node.js","check": "true" },
-    { "": ""}
+  [
+    { "name": "БЭМ/OOCSS","check": "","link":"" },
+    { "name": "Pug (Jade)","check": "","link":"" },
+    { "name": "Stylus/LESS/SASS","check": "","link":"" },
+    { "name": "Работаю с SVG","check": "" ,"link":""},
+    { "name": "Верстаю семантично","check": "","link":"" },
+    { "name": "Accessibility (A11Y)","check": "" ,"link":""},
+    { "name": "ES2015/ES2016","check": "","link":"" }
+  ],
+  [
+    { "name": "Gulp/GRUNT","check": "" ,"link":""},
+    { "name": "Webpack","check": "" ,"link":""},
+    { "name": "Дружу с WebGL","check": "","link":"" },
+    { "name": "jQuery","check": "" ,"link":""},
+    { "name": "Знаю/изучаю Angular","check": "","link":"" },
+    { "name": "Знаю/изучаю React","check":  "","link":""},
+    { "name": "Знаю/изучаю Node.js","check": "" ,"link":""}
+  ],
+  [
+    { "name": "Использую Git","check": "" ,"link":""},
+    { "name": "С глазомером всё ок","check": "","link":""},
+    { "name": "Читаю","check": "" ,"link":"blog.csssr.ru"},
+    { "name": "Я ленивый(-ая)","check": "" ,"link":""},
+    { "name": "У меня хороший английский","check": "" ,"link":""}
+  ]
 
 ]

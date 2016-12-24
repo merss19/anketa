@@ -1,48 +1,63 @@
 .aboute
 	position: relative
-	margin-top 6px
+	padding:21px 0
+
+	&__title
+		padding:6px 0
+
+	&__text
+		line-height: 22px
+		padding: 4px 0;
+		letter-spacing: -0.4px;
+		word-spacing: -0.5px;
+
+	&__skill
+		padding:12px 0
+		clearfix()
 
 	&__list
 		clearfix()
+		padding:9px 0
+		float: left
+		width:258px
+
+		&:nth-child(2)
+			width:268px
+
+		&:nth-child(3)
+			width:240px
+			
+	&__link
+		display: inline-block
+		color: $color-link
+		border-bottom: 1px solid $color-link
 
 	&__item
-		height 35px
-		margin-left 26px
-		float left
-		width: 30.6%
-
-		&:nth-child(3n + 2)
-			width: 33.1%
-
-		&:nth-child(3n + 3)
-			width: 25.2%
-
-		&:nth-last-child(2)
-			display none
+		padding: 6.5px 0;
+		margin-left: 28px;
+		word-spacing: -1px;
 
 
-		label
-			position relative
-			title(20px, bold ,-0.9px)
+	&__label
+		position relative
+		font-family: PTSansBold
+		font-size: 21px
+		line-height: 22px;
 
-			input[type='checkbox']
-				display none
+	&__input
+		display none
 
-			input[type='checkbox']:checked + span
-				background url(../images/sprites/list.png)  84px 241px
-				position: absolute;
-				size(37px, 30px)
-				top: -10px;
-				left: -37px;
-
-
-			span
-				content ""
-				background url(../images/sprites/list.png)  115px 231px
-				size(30px)
-				display inline-block
-				position absolute
-				left -36px
-				top 0
+		&:checked + span
+			retinaSprite $checkbox_active_group
+			position: absolute;
+			top: -10px;
+			left: -37px;
 
 
+	&__checkbox
+		content ""
+		retinaSprite $checkbox_group
+		display inline-block
+		position absolute
+		top: 5px;
+		left: -25px;
