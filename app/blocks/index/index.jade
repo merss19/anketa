@@ -1,0 +1,11 @@
+include ../title/title
+include ../form/form
+include ../aboute/aboute
+
+mixin index()
+	+b.content
+		+b.index
+			+e.item
+				+title()
+			+form(getData('form'))
+			+aboute(getData('skill'))

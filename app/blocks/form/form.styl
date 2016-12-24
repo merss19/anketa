@@ -1,0 +1,54 @@
+.form
+	border 0
+	margin-top: 37px;
+	padding-left: 1px;
+
+	&__item
+		clearfix()
+		width: 100%;
+		overflow: hidden;
+		padding-bottom:1.7px
+
+	&__label
+		float left
+		cursor pointer
+		margin: 24px 0 0 -2px
+		font-family: PTSansBold
+		font-size: 22px
+		display: inline-block
+
+	&__input[type='text']
+		border 0
+		font-family CourierNew
+		font-size 30px
+		padding: 0 0 14px 34px;
+		background: transparent
+		background-repeat: no-repeat
+		height: 60px
+
+	&__value
+		display: inline-block
+		position: relative
+
+		&:before
+			content: ''
+			display: block
+			retinaSprite $line_group
+			position: absolute
+			bottom: 12px;
+			left: 17px;
+
+#name
+	width: 646px
+#year
+	width: 640px
+	margin-left -6px
+#city
+	width: 597px
+	margin-left -6px
+#skype
+	width: 715px
+	margin-left -4px
+#mail
+	width: 716px
+	margin-left -4px

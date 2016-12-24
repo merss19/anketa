@@ -1,0 +1,25 @@
+mixin aboute(skill)
+	+b.aboute
+		+e('h2').title&attributes(attributes) Расскажите о себе чекбоксами
+			+e('p').text
+				| Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+		+e('ul').list
+			each item in skill
+				+e('li').item
+					if item.check
+						+e('label')
+							| #{ item.name}
+							input(
+							type = 'checkbox'
+							name = 'skill'
+							value = '#{ item[0] }'
+							checked
+							)
+					else
+						+e('label')
+							| #{ item.name}
+							input(
+							type = 'checkbox'
+							name = 'skill'
+							value = '#{ item[0] }'
+							)

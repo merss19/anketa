@@ -1,0 +1,12 @@
+
+mixin form(data)
+	+b('fieldset').form
+		each item in data
+			+e.item
+				+e('label').label(for = '#{ item[0]}') #{ item[1]}
+				+e.value
+					+e('input').input(
+						type='text'
+						value='#{ item[2] }'
+						id = '#{ item[0] }'
+						)
