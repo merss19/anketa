@@ -43,253 +43,246 @@
 		<title>CSSSR Project Template</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-		<link href="assets/styles/app.min.css" rel="stylesheet">
+		<link href="/assets/styles/app.min.css" rel="stylesheet">
 	</head>
 
 	<body class="page">
 		<div class="content">
-			<div class="index">
-				<div class="index__item">
-					<div class="title">
-						<div class="title__logo">
-							<div class="title__brend"></div>
-							<div class="title__banner"></div>
-						</div>
-						<div class="title__head"></div>
+			<div class="title">
+				<div class="title__logo">
+					<div class="title__brend"></div>
+					<div class="title__banner"></div>
+				</div>
+				<div class="title__head"></div>
+			</div>
+			<fieldset class="form">
+				<div class="form__item">
+					<label for="name" class="form__label">Полное ФИО</label>
+					<div class="form__value form__value form__value_type_name">
+						<input type="text" value="Меринов Александр Владимирович" id="name" class="form__input" />
 					</div>
 				</div>
-				<fieldset class="form">
-					<div class="form__item">
-						<label for="name" class="form__label">Полное ФИО</label>
-						<div class="form__value form__value form__value_type_name">
-							<input type="text" value="Меринов Александр Владимирович" id="name" class="form__input" />
-						</div>
-					</div>
-					<div class="form__item">
-						<label for="year" class="form__label">Год рождения</label>
-						<div class="form__value form__value form__value_type_year">
-							<input type="text" value="1984" id="year" class="form__input" />
-						</div>
-					</div>
-					<div class="form__item">
-						<label for="city" class="form__label">Место жительства</label>
-						<div class="form__value form__value form__value_type_city">
-							<input type="text" value="г.Псков, Россия" id="city" class="form__input" />
-						</div>
-					</div>
-					<div class="form__item">
-						<label for="skype" class="form__label">Скайп</label>
-						<div class="form__value form__value form__value_type_skype">
-							<input type="text" value="paketbl" id="skype" class="form__input" />
-						</div>
-					</div>
-					<div class="form__item">
-						<label for="mail" class="form__label">Почта</label>
-						<div class="form__value form__value form__value_type_mail">
-							<input type="text" value="a.merinov19@gmail.com" id="mail" class="form__input" />
-						</div>
-					</div>
-				</fieldset>
-				<div class="aboute">
-					<h2 class="aboute__title header-section">Расскажите о себе чекбоксами</h2>
-					<p class="aboute__text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше
-						шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете
-						справляться.</p>
-					<div class="aboute__skill">
-						<ul class="aboute__list">
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">БЭМ/OOCSS
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Pug (Jade)
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Stylus/LESS/SASS
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Работаю с SVG
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Верстаю семантично
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Accessibility (A11Y)
-									<input type="checkbox" name="skill" value="undefined" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">ES2015/ES2016
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-						</ul>
-						<ul class="aboute__list">
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Gulp/GRUNT
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Webpack
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Дружу с WebGL
-									<input type="checkbox" name="skill" value="undefined" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">jQuery
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Знаю/изучаю Angular
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input"
-									/>
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Знаю/изучаю React
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Знаю/изучаю Node.js
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input"
-									/>
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-						</ul>
-						<ul class="aboute__list">
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Использую Git
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">С глазомером всё ок
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input"
-									/>
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Читаю
-									<a href="http://blog.csssr.ru/" class="aboute__link">blog.csssr.ru</a>
-									<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">Я ленивый(-ая)
-									<input type="checkbox" name="skill" value="undefined" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-							<console item="item" class="log"></console>
-							<li class="aboute__item">
-								<label class="aboute__label">У меня хороший английский
-									<input type="checkbox" name="skill" value="undefined" class="aboute__input" />
-									<span class="aboute__checkbox"></span>
-								</label>
-							</li>
-						</ul>
+				<div class="form__item">
+					<label for="year" class="form__label">Год рождения</label>
+					<div class="form__value form__value form__value_type_year">
+						<input type="text" value="1984" id="year" class="form__input" />
 					</div>
 				</div>
-				<div class="slider">
-					<h2 class="header-section"> Уровень владения JavaScript</h2>
-					<div class="slider__line js-slider">
-						<div class="slider__drag"></div>
-					</div>
-					<div class="slider__level">
-						<div class="slider__item">Не владею</div>
-						<div class="slider__item">Использую готовые решения</div>
-						<div class="slider__item">Использую готовые решения и умею их переделывать</div>
-						<div class="slider__item">Пишу сложный JS c нуля</div>
+				<div class="form__item">
+					<label for="city" class="form__label">Место жительства</label>
+					<div class="form__value form__value form__value_type_city">
+						<input type="text" value="г.Псков, Россия" id="city" class="form__input" />
 					</div>
 				</div>
-				<div class="tell">
-					<h2 class="tell__title header-section"> Расскажите о себе словами</h2>
-					<div class="tell__text">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово,
-						если при нехватке места для текста строки будут добавляться автоматически.</div>
-					<textarea class="tell__textarea">Ожидаю профессионального роста, получения опыта по вышеуказанному стеку!</textarea>
-				</div>
-				<div class="plane">
-					<h2 class="plane__title header-section">Какие у вас планы на будущее?</h2>
-					<div class="plane__text">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</div>
-					<div class="plane__items">
-						<div class="plane__item">
-							<input type="radio" name="plane" id="radio1" class="plane__input" />
-							<label for="radio1" class="plane__label">Верстать</label>
-						</div>
-						<div class="plane__item">
-							<input type="radio" name="plane" id="radio2" checked="checked" class="plane__input" />
-							<label for="radio2" class="plane__label">Прокачиваться в JS</label>
-						</div>
-						<div class="plane__item">
-							<input type="radio" name="plane" id="radio3" class="plane__input" />
-							<label for="radio3" class="plane__label">Менеджерство</label>
-						</div>
-						<div class="plane__item">
-							<input type="radio" name="plane" id="radio4" class="plane__input" />
-							<label for="radio4" class="plane__label">Другое</label>
-						</div>
+				<div class="form__item">
+					<label for="skype" class="form__label">Скайп</label>
+					<div class="form__value form__value form__value_type_skype">
+						<input type="text" value="paketbl" id="skype" class="form__input" />
 					</div>
-					<div class="plane__date">
-						<label for="date" class="plane__date-label">Дата заполенения</label>
-						<div class="plane__value">
-							<input type="text" value="25.12.2016" id="date}" class="plane__date-input" />
-						</div>
+				</div>
+				<div class="form__item">
+					<label for="mail" class="form__label">Почта</label>
+					<div class="form__value form__value form__value_type_mail">
+						<input type="text" value="a.merinov19@gmail.com" id="mail" class="form__input" />
+					</div>
+				</div>
+			</fieldset>
+			<div class="aboute">
+				<h2 class="aboute__title header-section">Расскажите о себе чекбоксами</h2>
+				<p class="aboute__text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше
+					шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете
+					справляться.</p>
+				<div class="aboute__skill">
+					<ul class="aboute__list">
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">БЭМ/OOCSS
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Pug (Jade)
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Stylus/LESS/SASS
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Работаю с SVG
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Верстаю семантично
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Accessibility (A11Y)
+								<input type="checkbox" name="skill" value="undefined" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">ES2015/ES2016
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+					</ul>
+					<ul class="aboute__list">
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Gulp/GRUNT
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Webpack
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Дружу с WebGL
+								<input type="checkbox" name="skill" value="undefined" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">jQuery
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Знаю/изучаю Angular
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Знаю/изучаю React
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Знаю/изучаю Node.js
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+					</ul>
+					<ul class="aboute__list">
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Использую Git
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">С глазомером всё ок
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Читаю
+								<a href="http://blog.csssr.ru/" class="aboute__link">blog.csssr.ru</a>
+								<input type="checkbox" name="skill" value="undefined" checked="checked" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">Я ленивый(-ая)
+								<input type="checkbox" name="skill" value="undefined" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+						<console item="item" class="log"></console>
+						<li class="aboute__item">
+							<label class="aboute__label">У меня хороший английский
+								<input type="checkbox" name="skill" value="undefined" class="aboute__input" />
+								<span class="aboute__checkbox"></span>
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="slider">
+				<h2 class="header-section"> Уровень владения JavaScript</h2>
+				<div class="slider__line js-slider">
+					<div class="slider__drag"></div>
+				</div>
+				<div class="slider__level">
+					<div class="slider__item">Не владею</div>
+					<div class="slider__item">Использую готовые решения</div>
+					<div class="slider__item">Использую готовые решения и умею их переделывать</div>
+					<div class="slider__item">Пишу сложный JS c нуля</div>
+				</div>
+			</div>
+			<div class="tell">
+				<h2 class="tell__title header-section"> Расскажите о себе словами</h2>
+				<div class="tell__text">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово,
+					если при нехватке места для текста строки будут добавляться автоматически.</div>
+				<textarea class="tell__textarea">Ожидаю профессионального роста, получения опыта по вышеуказанному стеку!</textarea>
+			</div>
+			<div class="plane">
+				<h2 class="plane__title header-section">Какие у вас планы на будущее?</h2>
+				<div class="plane__text">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</div>
+				<div class="plane__items">
+					<div class="plane__item">
+						<input type="radio" name="plane" id="radio1" class="plane__input" />
+						<label for="radio1" class="plane__label">Верстать</label>
+					</div>
+					<div class="plane__item">
+						<input type="radio" name="plane" id="radio2" checked="checked" class="plane__input" />
+						<label for="radio2" class="plane__label">Прокачиваться в JS</label>
+					</div>
+					<div class="plane__item">
+						<input type="radio" name="plane" id="radio3" class="plane__input" />
+						<label for="radio3" class="plane__label">Менеджерство</label>
+					</div>
+					<div class="plane__item">
+						<input type="radio" name="plane" id="radio4" class="plane__input" />
+						<label for="radio4" class="plane__label">Другое</label>
+					</div>
+				</div>
+				<div class="plane__date">
+					<label for="date" class="plane__date-label">Дата заполенения</label>
+					<div class="plane__value">
+						<input type="text" value="25.12.2016" id="date}" class="plane__date-input" />
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="assets/scripts/app.min.js"></script>
+		<script src="/assets/scripts/app.min.js"></script>
 	</body>
 
 </html>
