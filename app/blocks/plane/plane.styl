@@ -1,0 +1,84 @@
+.plane
+	padding 35px 0
+
+	&__title
+		padding 6px 0
+
+	&__text
+		padding 2px 0
+		line-height 22px
+		letter-spacing -.4px
+		word-spacing -.5px
+
+	&__items
+		clearfix()
+		padding-top 5px
+
+	&__item
+		margin-right 20px
+		float left
+
+		&:nth-child(2)
+			margin-right 25px
+
+
+
+	&__input
+		display none
+
+		&:checked + label:before
+			retinaSprite $radio_active_group
+			position relative
+			top 7px
+			left -6px
+
+		&+ label:before
+			content ''
+			retinaSprite $radio_group
+			position relative
+			top 7px
+			left -6px
+			display inline-block
+
+	&__date
+		padding-top 86px
+
+	&__value
+		position relative
+		width: 225px
+		display inline-block
+
+		&:before
+			content ''
+			retinaSprite $line_date_group
+			position absolute
+			left -7px
+			bottom 9px
+			display block
+
+	&__label
+		padding-left 4px
+		display inline-block
+		font-family PTSansBold
+		font-size 20px
+		vertical-align middle
+		cursor pointer
+
+
+	&__date
+		&-label
+			position relative
+			top 14px
+			font-family PTSansBold
+			font-size 22px
+			cursor pointer
+
+		&-input
+			padding 0 0 29px 13px
+			width 100%
+			height 57px
+			font-family CourierNew
+			font-size 30px
+			background transparent
+			background-repeat no-repeat
+			border none

@@ -1,0 +1,43 @@
+mixin plane()
+	+b.plane
+		+e('h2').title.header-section Какие у вас планы на будущее?
+		+e.text Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+		+e.items
+			+e.item
+				+e('input').input(
+				type = 'radio'
+				name = 'plane'
+				id = 'radio1'
+				)
+				+e('label').label(for = 'radio1') Верстать
+			+e.item
+				+e('input').input(
+				type = 'radio'
+				name = 'plane'
+				id = 'radio2'
+				checked
+				)
+				+e('label').label(for = 'radio2') Прокачиваться в JS
+			+e.item
+				+e('input').input(
+				type = 'radio'
+				name = 'plane'
+				id = 'radio3'
+				)
+				+e('label').label(for = 'radio3') Менеджерство
+			+e.item
+				+e('input').input(
+				type = 'radio'
+				name = 'plane'
+				id = 'radio4'
+				)
+				+e('label').label(for = 'radio4') Другое
+
+		+e.date
+			+e('label').date-label(for = 'date') Дата заполенения
+			+e.value
+				+e('input').date-input(
+				type='text'
+				value='25.12.2016'
+				id = 'date}'
+				)

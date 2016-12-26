@@ -1,26 +1,26 @@
 [
   [
-    { "name": "БЭМ/OOCSS","check": "","link":"" },
-    { "name": "Pug (Jade)","check": "","link":"" },
-    { "name": "Stylus/LESS/SASS","check": "","link":"" },
-    { "name": "Работаю с SVG","check": "" ,"link":""},
-    { "name": "Верстаю семантично","check": "","link":"" },
+    { "name": "БЭМ/OOCSS","check": "true","link":"" },
+    { "name": "Pug (Jade)","check": "true","link":"" },
+    { "name": "Stylus/LESS/SASS","check": "true","link":"" },
+    { "name": "Работаю с SVG","check": "true" ,"link":""},
+    { "name": "Верстаю семантично","check": "true","link":"" },
     { "name": "Accessibility (A11Y)","check": "" ,"link":""},
-    { "name": "ES2015/ES2016","check": "","link":"" }
+    { "name": "ES2015/ES2016","check": "true","link":"" }
   ],
   [
-    { "name": "Gulp/GRUNT","check": "" ,"link":""},
-    { "name": "Webpack","check": "" ,"link":""},
+    { "name": "Gulp/GRUNT","check": "true" ,"link":""},
+    { "name": "Webpack","check": "true" ,"link":""},
     { "name": "Дружу с WebGL","check": "","link":"" },
-    { "name": "jQuery","check": "" ,"link":""},
-    { "name": "Знаю/изучаю Angular","check": "","link":"" },
-    { "name": "Знаю/изучаю React","check":  "","link":""},
-    { "name": "Знаю/изучаю Node.js","check": "" ,"link":""}
+    { "name": "jQuery","check": "true" ,"link":""},
+    { "name": "Знаю/изучаю Angular","check": "true","link":"" },
+    { "name": "Знаю/изучаю React","check":  "true","link":""},
+    { "name": "Знаю/изучаю Node.js","check": "true" ,"link":""}
   ],
   [
-    { "name": "Использую Git","check": "" ,"link":""},
-    { "name": "С глазомером всё ок","check": "","link":""},
-    { "name": "Читаю","check": "" ,"link":"blog.csssr.ru"},
+    { "name": "Использую Git","check": "true" ,"link":""},
+    { "name": "С глазомером всё ок","check": "true","link":""},
+    { "name": "Читаю","check": "true" ,"link":"blog.csssr.ru"},
     { "name": "Я ленивый(-ая)","check": "" ,"link":""},
     { "name": "У меня хороший английский","check": "" ,"link":""}
   ]

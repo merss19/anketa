@@ -1,33 +1,23 @@
 .tell
-	padding:6px 0
+	padding 16px 0
 
-	&__line
-		retinaSprite $slider_group
-		margin 20px 0 0 12px
+	&__title
+		padding 6px 0
 
-	&__drag
-		background url(../images/sprites/list.png)  42px 240px
-		position: relative
-		top: 10px;
+	&__text
+		padding 7px 0
+		line-height 22px
+		letter-spacing -.4px
+		word-spacing -.5px
 
-	&__level
-		margin 44px 0 0 -1px
-		letter-spacing: -0.5px
-
-	&__item
-		float left
-		font-size: 13px
-		font-family:PTSansBold
-
-		&:nth-child(2)
-			margin-left: 83px
-
-		&:nth-child(3)
-			margin-left: 65px
-			max-width: 170px
-			line-height 14px
-
-		&:nth-child(4)
-			margin-left 83px
-			margin-top: 6px;
-
+	&__textarea
+		margin 19px 0 0 -5px
+		padding-left 7px
+		overflow hidden
+		width 100%
+		height 200 px
+		font-family CourierNew
+		font-size 30px
+		line-height 59px
+		background  local url(../images/text-lines.png) 0 20px repeat
+		border none

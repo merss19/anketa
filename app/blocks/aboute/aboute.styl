@@ -1,63 +1,63 @@
 .aboute
-	position: relative
-	padding:21px 0
+	position relative
+	padding 21px 0
 
 	&__title
-		padding:6px 0
+		padding 6px 0
 
 	&__text
-		line-height: 22px
-		padding: 4px 0;
-		letter-spacing: -0.4px;
-		word-spacing: -0.5px;
+		padding 4px 0
+		line-height 22px
+		letter-spacing -.4px
+		word-spacing -.5px
 
 	&__skill
-		padding:12px 0
+		padding 12px 0
 		clearfix()
 
 	&__list
 		clearfix()
-		padding:9px 0
-		float: left
-		width:258px
+		padding 9px 0
+		float left
+		width 258px
 
 		&:nth-child(2)
-			width:268px
+			width 268px
 
 		&:nth-child(3)
-			width:240px
+			width 240px
 			
 	&__link
-		display: inline-block
-		color: $color-link
-		border-bottom: 1px solid $color-link
+		display inline-block
+		color $color-link
+		border-bottom 1px solid $color-link
 
 	&__item
-		padding: 6.5px 0;
-		margin-left: 28px;
-		word-spacing: -1px;
+		margin-left 28px
+		padding 6.5px 0
+		word-spacing -1px
 
 
 	&__label
 		position relative
-		font-family: PTSansBold
-		font-size: 21px
-		line-height: 22px;
+		font-family PTSansBold
+		font-size 21px
+		line-height 22px
+		cursor pointer
 
 	&__input
 		display none
 
+		& + span
+			retinaSprite $checkbox_group
+			position absolute
+			top 5px
+			left -25px
+			display inline-block
+			content ''
+
 		&:checked + span
 			retinaSprite $checkbox_active_group
-			position: absolute;
-			top: -10px;
-			left: -37px;
-
-
-	&__checkbox
-		content ""
-		retinaSprite $checkbox_group
-		display inline-block
-		position absolute
-		top: 5px;
-		left: -25px;
+			position absolute
+			top -5px
+			left -26px
