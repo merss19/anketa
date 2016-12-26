@@ -25,7 +25,7 @@ const SliderModule = ($ => {
 			this.line = $(element);
 			this.dragger = $(element).children();
 			this.rightEdge = this.line.width() - this.dragger.width() / 4;
-
+			console.log(this.rightEdge)
 			this.config = {
 				position: 0
 			};
@@ -57,17 +57,18 @@ const SliderModule = ($ => {
 
 		mouseDown(e){
 			console.log('mouseDown')
+			console.log(this.dragger.css('left'))
 
 			let posX = e.pageX || e.originalEvent.touches && e.originalEvent.touches[0].pageX;
 			const draggerCoords = this.getCoords(this.dragger);
-			console.log(posX)
-			console.log(draggerCoords)
+			//console.log(posX)
+			//console.log(draggerCoords)
 
 			this.shiftX = posX - draggerCoords.left;
-			console.log(this.shiftX)
+			//console.log(this.shiftX)
 
 			this.sliderCoords = this.getCoords(this.line);
-			console.log(this.sliderCoords)
+			//console.log(this.sliderCoords)
 			$(this.line).on('mousemove', event => {
 				this.mouseMove(event);
 			});
@@ -75,7 +76,7 @@ const SliderModule = ($ => {
 
 			this.dragger.on('touchmove', ev => {
 				console.log('touchmove')
-				this.mouseDown(ev);
+				this.mouseMove(ev);
 			});
 
 
@@ -120,8 +121,8 @@ const SliderModule = ($ => {
 			const box = elem[0].getBoundingClientRect();
 
 			return {
-				top: box.top + pageYOffset,
-				left: box.left + pageXOffset
+				top: box.top ,
+				left: box.left
 			};
 
 		}
