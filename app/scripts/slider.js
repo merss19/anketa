@@ -42,9 +42,9 @@ const SliderModule = ($ => {
 			});
 
 
-			this.dragger.on('touchstart', e => {
+			this.dragger.on('touchstart', ev => {
 				console.log('touchstart')
-				this.mouseDown(e);
+				this.mouseDown(ev);
 			});
 
 
@@ -56,22 +56,26 @@ const SliderModule = ($ => {
 		}
 
 		mouseDown(e){
+			console.log('mouseDown')
+
 			let posX = e.pageX || e.originalEvent.touches && e.originalEvent.touches[0].pageX;
 			const draggerCoords = this.getCoords(this.dragger);
+			console.log(posX)
+			console.log(draggerCoords)
 
 			this.shiftX = posX - draggerCoords.left;
-
+			console.log(this.shiftX)
 
 			this.sliderCoords = this.getCoords(this.line);
-
+			console.log(this.sliderCoords)
 			$(this.line).on('mousemove', event => {
 				this.mouseMove(event);
 			});
 
 
-			this.dragger.on('touchmove', e => {
+			this.dragger.on('touchmove', ev => {
 				console.log('touchmove')
-				this.mouseDown(e);
+				this.mouseDown(ev);
 			});
 
 
@@ -80,7 +84,7 @@ const SliderModule = ($ => {
 		mouseMove(e){
 			console.log('mouseMove')
 			let posX = e.pageX || e.originalEvent.touches && e.originalEvent.touches[0].pageX;
-
+			console.log(posX)
 			let newLeft = posX- this.shiftX - this.sliderCoords.left + this.dragger.width() / 2;
 			console.log(newLeft)
 			// курсор ушёл вне слайдера
@@ -101,12 +105,13 @@ const SliderModule = ($ => {
 				this.line.off('mouseup');
 			});
 
-			if ('ontouchstart' in window) {
-				this.dragger.on('touchend', e => {
-					console.log('touchend')
-					this.mouseDown(e);
-				});
-			}
+
+			this.dragger.on('touchend', () => {
+				console.log('touchend')
+				this.line.off('touchmove');
+				this.line.off('touchstart');
+			});
+
 
 		}
 
