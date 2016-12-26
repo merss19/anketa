@@ -41,6 +41,13 @@ const SliderModule = ($ => {
 				this.mouseDown(e);
 			});
 
+
+			this.dragger.on('touchstart', e => {
+				console.log('touchstart')
+				this.mouseDown(e);
+			});
+
+
 		}
 
 		initPos(){
@@ -49,9 +56,10 @@ const SliderModule = ($ => {
 		}
 
 		mouseDown(e){
+			let posX = e.pageX || e.originalEvent.touches && e.originalEvent.touches[0].pageX;
 			const draggerCoords = this.getCoords(this.dragger);
 
-			this.shiftX = e.pageX - draggerCoords.left;
+			this.shiftX = posX - draggerCoords.left;
 
 
 			this.sliderCoords = this.getCoords(this.line);
@@ -60,11 +68,21 @@ const SliderModule = ($ => {
 				this.mouseMove(event);
 			});
 
+
+			this.dragger.on('touchmove', e => {
+				console.log('touchmove')
+				this.mouseDown(e);
+			});
+
+
 		}
 
 		mouseMove(e){
-			let newLeft = e.pageX - this.shiftX - this.sliderCoords.left + this.dragger.width() / 2;
+			console.log('mouseMove')
+			let posX = e.pageX || e.originalEvent.touches && e.originalEvent.touches[0].pageX;
 
+			let newLeft = posX- this.shiftX - this.sliderCoords.left + this.dragger.width() / 2;
+			console.log(newLeft)
 			// курсор ушёл вне слайдера
 			if (newLeft < 0) {
 				newLeft = 0;
@@ -82,6 +100,13 @@ const SliderModule = ($ => {
 				this.line.off('mousemove');
 				this.line.off('mouseup');
 			});
+
+			if ('ontouchstart' in window) {
+				this.dragger.on('touchend', e => {
+					console.log('touchend')
+					this.mouseDown(e);
+				});
+			}
 
 		}
 
